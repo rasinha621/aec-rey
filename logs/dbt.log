@@ -1,0 +1,320 @@
+[0m00:18:30.308391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460b037610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460b3ab3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460b3aae00>]}
+
+
+============================== 00:18:30.311017 | 86accfc9-2105-4cb0-9e19-19774c8cb9a3 ==============================
+[0m00:18:30.311017 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:18:30.311652 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m00:18:30.320246 [info ] [MainThread]: dbt version: 1.8.7
+[0m00:18:30.320721 [info ] [MainThread]: python version: 3.10.12
+[0m00:18:30.321192 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:18:30.321635 [info ] [MainThread]: os info: Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+[0m00:18:30.322763 [info ] [MainThread]: target not specified in profile 'client_id', using 'default'
+[0m00:18:30.323442 [info ] [MainThread]: target not specified in profile 'client_secret', using 'default'
+[0m00:18:30.324082 [info ] [MainThread]: target not specified in profile 'refresh_token', using 'default'
+[0m00:18:30.324721 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m00:18:30.325462 [info ] [MainThread]: target not specified in profile 'universe_domain', using 'default'
+[0m00:18:30.325998 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m00:18:30.326537 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m00:18:30.327146 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/aec-rey/dbt_project.yml
+[0m00:18:30.327618 [info ] [MainThread]: Configuration:
+[0m00:18:30.328045 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:18:30.328477 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:18:30.328908 [info ] [MainThread]: Required dependencies:
+[0m00:18:30.329370 [debug] [MainThread]: Executing "git --help"
+[0m00:18:30.331761 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:18:30.332426 [debug] [MainThread]: STDERR: "b''"
+[0m00:18:30.332816 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:18:30.333324 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:18:30.333849 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:18:30.334336 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Profile account in profiles.yml is empty
+  
+
+Runtime Error
+  outputs not specified in profile 'client_id'
+
+Runtime Error
+  outputs not specified in profile 'client_secret'
+
+Runtime Error
+  outputs not specified in profile 'refresh_token'
+
+Runtime Error
+  outputs not specified in profile 'type'
+
+Runtime Error
+  outputs not specified in profile 'universe_domain'
+
+
+[0m00:18:30.334865 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/aec-rey/dbt_project.yml> not found
+
+[0m00:18:30.336076 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.075695276, "process_user_time": 1.212216, "process_kernel_time": 0.071775, "process_mem_max_rss": "85724", "process_in_blocks": "480", "process_out_blocks": "24", "command_success": false}
+[0m00:18:30.336680 [debug] [MainThread]: Command `dbt debug` failed at 00:18:30.336577 after 0.08 seconds
+[0m00:18:30.337097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460b037610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460aa0e500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71460959bc10>]}
+[0m00:18:30.337533 [debug] [MainThread]: Flushing usage events
+[0m00:20:32.150696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f8073640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f65db160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f65da0e0>]}
+
+
+============================== 00:20:32.153424 | 6f8eea6b-fe7f-4151-8bb3-6aff8293556a ==============================
+[0m00:20:32.153424 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:20:32.154144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:20:32.161949 [info ] [MainThread]: dbt version: 1.8.7
+[0m00:20:32.162490 [info ] [MainThread]: python version: 3.10.12
+[0m00:20:32.162947 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:20:32.163456 [info ] [MainThread]: os info: Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+[0m00:20:32.164464 [info ] [MainThread]: target not specified in profile 'account', using 'default'
+[0m00:20:32.165156 [info ] [MainThread]: target not specified in profile 'client_id', using 'default'
+[0m00:20:32.165820 [info ] [MainThread]: target not specified in profile 'client_secret', using 'default'
+[0m00:20:32.166440 [info ] [MainThread]: target not specified in profile 'refresh_token', using 'default'
+[0m00:20:32.167103 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m00:20:32.167835 [info ] [MainThread]: target not specified in profile 'universe_domain', using 'default'
+[0m00:20:32.168422 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m00:20:32.168919 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m00:20:32.169470 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/aec-rey/dbt_project.yml
+[0m00:20:32.170046 [info ] [MainThread]: Configuration:
+[0m00:20:32.170498 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:20:32.170917 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:20:32.171365 [info ] [MainThread]: Required dependencies:
+[0m00:20:32.171802 [debug] [MainThread]: Executing "git --help"
+[0m00:20:32.174106 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:20:32.174544 [debug] [MainThread]: STDERR: "b''"
+[0m00:20:32.175068 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:20:32.175706 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:20:32.176360 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:20:32.176857 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  outputs not specified in profile 'account'
+
+Runtime Error
+  outputs not specified in profile 'client_id'
+
+Runtime Error
+  outputs not specified in profile 'client_secret'
+
+Runtime Error
+  outputs not specified in profile 'refresh_token'
+
+Runtime Error
+  outputs not specified in profile 'type'
+
+Runtime Error
+  outputs not specified in profile 'universe_domain'
+
+
+[0m00:20:32.177378 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/aec-rey/dbt_project.yml> not found
+
+[0m00:20:32.178275 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.07474711, "process_user_time": 1.100702, "process_kernel_time": 0.159522, "process_mem_max_rss": "85872", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m00:20:32.178892 [debug] [MainThread]: Command `dbt debug` failed at 00:20:32.178791 after 0.08 seconds
+[0m00:20:32.179359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f8073640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f65dbf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7512f665eec0>]}
+[0m00:20:32.179799 [debug] [MainThread]: Flushing usage events
+[0m00:21:09.186593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ec1703640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ebfc6b160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ebfc6a0e0>]}
+
+
+============================== 00:21:09.189058 | a5d66f19-c9bd-43c5-b1fe-a4debc386056 ==============================
+[0m00:21:09.189058 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:21:09.189765 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:21:09.196850 [info ] [MainThread]: dbt version: 1.8.7
+[0m00:21:09.197337 [info ] [MainThread]: python version: 3.10.12
+[0m00:21:09.197799 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:21:09.198237 [info ] [MainThread]: os info: Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+[0m00:21:09.199217 [info ] [MainThread]: target not specified in profile 'account', using 'default'
+[0m00:21:09.199878 [info ] [MainThread]: target not specified in profile 'client_id', using 'default'
+[0m00:21:09.200529 [info ] [MainThread]: target not specified in profile 'client_secret', using 'default'
+[0m00:21:09.201154 [info ] [MainThread]: target not specified in profile 'refresh_token', using 'default'
+[0m00:21:09.201771 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m00:21:09.202492 [info ] [MainThread]: target not specified in profile 'universe_domain', using 'default'
+[0m00:21:09.203045 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m00:21:09.203564 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m00:21:09.204108 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/aec-rey/dbt_project.yml
+[0m00:21:09.204636 [info ] [MainThread]: Configuration:
+[0m00:21:09.205074 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:21:09.205489 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:21:09.205902 [info ] [MainThread]: Required dependencies:
+[0m00:21:09.206334 [debug] [MainThread]: Executing "git --help"
+[0m00:21:09.208625 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:21:09.209321 [debug] [MainThread]: STDERR: "b''"
+[0m00:21:09.209685 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:21:09.210146 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:21:09.210642 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:21:09.211111 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  outputs not specified in profile 'account'
+
+Runtime Error
+  outputs not specified in profile 'client_id'
+
+Runtime Error
+  outputs not specified in profile 'client_secret'
+
+Runtime Error
+  outputs not specified in profile 'refresh_token'
+
+Runtime Error
+  outputs not specified in profile 'type'
+
+Runtime Error
+  outputs not specified in profile 'universe_domain'
+
+
+[0m00:21:09.211613 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/aec-rey/dbt_project.yml> not found
+
+[0m00:21:09.212436 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.0721372, "process_user_time": 1.057935, "process_kernel_time": 0.128722, "process_mem_max_rss": "85812", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:21:09.213014 [debug] [MainThread]: Command `dbt debug` failed at 00:21:09.212912 after 0.07 seconds
+[0m00:21:09.213421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ec1703640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ebfc6bf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x733ebfceeec0>]}
+[0m00:21:09.213854 [debug] [MainThread]: Flushing usage events
+[0m00:21:50.707829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee84b2f35b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee849823820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee849823eb0>]}
+
+
+============================== 00:21:50.710417 | bb1383ad-2c31-4d92-adb9-5e0586037aed ==============================
+[0m00:21:50.710417 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:21:50.711088 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:21:50.718431 [info ] [MainThread]: dbt version: 1.8.7
+[0m00:21:50.718947 [info ] [MainThread]: python version: 3.10.12
+[0m00:21:50.719415 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:21:50.719858 [info ] [MainThread]: os info: Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+[0m00:21:50.720793 [info ] [MainThread]: target not specified in profile 'account', using 'default'
+[0m00:21:50.721448 [info ] [MainThread]: target not specified in profile 'client_id', using 'default'
+[0m00:21:50.722078 [info ] [MainThread]: target not specified in profile 'client_secret', using 'default'
+[0m00:21:50.722709 [info ] [MainThread]: target not specified in profile 'refresh_token', using 'default'
+[0m00:21:50.723485 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m00:21:50.724136 [info ] [MainThread]: target not specified in profile 'universe_domain', using 'default'
+[0m00:21:50.725162 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m00:21:50.725614 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m00:21:50.726041 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/aec-rey/dbt_project.yml
+[0m00:21:50.726484 [info ] [MainThread]: Configuration:
+[0m00:21:50.726906 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:21:50.727363 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:21:50.727783 [info ] [MainThread]: Required dependencies:
+[0m00:21:50.728281 [debug] [MainThread]: Executing "git --help"
+[0m00:21:50.730873 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:21:50.731386 [debug] [MainThread]: STDERR: "b''"
+[0m00:21:50.731757 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:21:50.732197 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:21:50.732693 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:21:50.733135 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  outputs not specified in profile 'account'
+
+Runtime Error
+  outputs not specified in profile 'client_id'
+
+Runtime Error
+  outputs not specified in profile 'client_secret'
+
+Runtime Error
+  outputs not specified in profile 'refresh_token'
+
+Runtime Error
+  outputs not specified in profile 'type'
+
+Runtime Error
+  outputs not specified in profile 'universe_domain'
+
+
+[0m00:21:50.733648 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/aec-rey/dbt_project.yml> not found
+
+[0m00:21:50.734498 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.074003845, "process_user_time": 1.141682, "process_kernel_time": 0.114168, "process_mem_max_rss": "86288", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:21:50.735112 [debug] [MainThread]: Command `dbt debug` failed at 00:21:50.735006 after 0.07 seconds
+[0m00:21:50.735531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee84b2f35b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee8498229e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee8498a3a90>]}
+[0m00:21:50.735967 [debug] [MainThread]: Flushing usage events
+[0m00:24:29.847173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd14624b670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd145d25ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd14655e2f0>]}
+
+
+============================== 00:24:29.849626 | 0ea2d87f-347e-46b8-aa5b-4f5baba15add ==============================
+[0m00:24:29.849626 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:24:29.850277 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:24:29.857442 [info ] [MainThread]: dbt version: 1.8.7
+[0m00:24:29.857930 [info ] [MainThread]: python version: 3.10.12
+[0m00:24:29.858446 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:24:29.858937 [info ] [MainThread]: os info: Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+[0m00:24:30.449961 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m00:24:30.450566 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m00:24:30.451207 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/aec-rey/dbt_project.yml
+[0m00:24:30.451714 [info ] [MainThread]: adapter type: bigquery
+[0m00:24:30.452204 [info ] [MainThread]: adapter version: 1.8.3
+[0m00:24:30.452689 [info ] [MainThread]: Configuration:
+[0m00:24:30.453158 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:24:30.453628 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:24:30.454092 [info ] [MainThread]: Required dependencies:
+[0m00:24:30.454566 [debug] [MainThread]: Executing "git --help"
+[0m00:24:30.457207 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:24:30.457852 [debug] [MainThread]: STDERR: "b''"
+[0m00:24:30.458288 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:24:30.458782 [info ] [MainThread]: Connection:
+[0m00:24:30.459283 [info ] [MainThread]:   method: oauth
+[0m00:24:30.459745 [info ] [MainThread]:   database: improved-space-broccoli
+[0m00:24:30.460209 [info ] [MainThread]:   execution_project: improved-space-broccoli
+[0m00:24:30.460672 [info ] [MainThread]:   schema: dbt_reyhan
+[0m00:24:30.461125 [info ] [MainThread]:   location: US
+[0m00:24:30.461574 [info ] [MainThread]:   priority: interactive
+[0m00:24:30.462020 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m00:24:30.462472 [info ] [MainThread]:   impersonate_service_account: None
+[0m00:24:30.462929 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m00:24:30.463504 [info ] [MainThread]:   job_retries: 1
+[0m00:24:30.464056 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m00:24:30.464588 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m00:24:30.465253 [info ] [MainThread]:   timeout_seconds: 300
+[0m00:24:30.465750 [info ] [MainThread]:   client_id: None
+[0m00:24:30.466175 [info ] [MainThread]:   token_uri: None
+[0m00:24:30.466628 [info ] [MainThread]:   dataproc_region: None
+[0m00:24:30.467148 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m00:24:30.467567 [info ] [MainThread]:   gcs_bucket: None
+[0m00:24:30.467982 [info ] [MainThread]:   dataproc_batch: None
+[0m00:24:30.468599 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m00:24:30.470736 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m00:24:30.471318 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:24:30.929478 [debug] [MainThread]: On debug: select 1 as id
+[0m00:24:31.618113 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=improved-space-broccoli&j=bq:US:6e714d27-1ebd-4694-a37a-3be25761c01c&page=queryresults
+[0m00:24:31.619250 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:24:31.620907 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:24:31.622154 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/aec-rey/dbt_project.yml> not found
+
+[0m00:24:31.623106 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Not found: Project improved-space-broccoli
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:24:31.626642 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.8259115, "process_user_time": 1.675385, "process_kernel_time": 0.215406, "process_mem_max_rss": "203252", "process_in_blocks": "4352", "process_out_blocks": "24", "command_success": false}
+[0m00:24:31.627637 [debug] [MainThread]: Command `dbt debug` failed at 00:24:31.627478 after 1.83 seconds
+[0m00:24:31.628306 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:24:31.628887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd14624b670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd131adfe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd13196c430>]}
+[0m00:24:31.629557 [debug] [MainThread]: Flushing usage events
+[0m00:26:44.614934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82241f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8226d7e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8226d70a0>]}
+
+
+============================== 00:26:44.617602 | 36f95d2c-fd63-4443-ac33-46166360d968 ==============================
+[0m00:26:44.617602 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:26:44.618247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:26:44.618811 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/aec-rey/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:26:44.619716 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.05196931, "process_user_time": 1.17762, "process_kernel_time": 0.098463, "process_mem_max_rss": "85492", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:26:44.620335 [debug] [MainThread]: Command `dbt run` failed at 00:26:44.620232 after 0.05 seconds
+[0m00:26:44.620771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff82241f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8226d6b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8226d7ca0>]}
+[0m00:26:44.621213 [debug] [MainThread]: Flushing usage events
